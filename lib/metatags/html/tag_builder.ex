@@ -1,7 +1,9 @@
 defmodule Metatags.HTML.TagBuilder do
   @moduledoc false
 
-  alias Phoenix.HTML.Tag
+  # phoenix_html 4.0 moved Phoenix.HTML.Tag into the phoenix_html_helpers
+  # package; PhoenixHTMLHelpers.Tag is the verbatim extraction (same API/output).
+  alias PhoenixHTMLHelpers.Tag
 
   @type metatags_struct :: struct()
 
